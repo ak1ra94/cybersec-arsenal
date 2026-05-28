@@ -1,0 +1,125 @@
+# ─── Secrets & credentials ────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*_id_rsa
+secrets/
+creds/
+credentials/
+
+# ─── Pentest / recon output ───────────────────────────────────────────────────
+*.nmap
+*.gnmap
+*.xml.nmap
+reports/raw/
+loot/
+exfil/
+captures/
+*.pcap
+*.pcapng
+*.cap
+
+# ─── Burp Suite ───────────────────────────────────────────────────────────────
+*.burp
+burp-state/
+
+# ─── Metasploit ───────────────────────────────────────────────────────────────
+.msf4/
+msf-sessions/
+
+# ─── Wordlists & payloads (large binaries, install separately) ────────────────
+wordlists/
+payloads/
+*.lst
+*.dict
+
+# ─── VMs & lab environments ───────────────────────────────────────────────────
+.vagrant/
+*.vmdk
+*.vdi
+*.ova
+*.ovf
+*.vbox
+*.vbox-prev
+*.vmx
+*.vmxf
+*.nvram
+*.vmsd
+Vagrantfile.local
+
+# ─── Docker ───────────────────────────────────────────────────────────────────
+.docker-data/
+docker-compose.override.yml
+
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ─── Node / JS tools ──────────────────────────────────────────────────────────
+node_modules/
+.npm/
+*.lock
+!package-lock.json
+!yarn.lock
+
+# ─── Rust ─────────────────────────────────────────────────────────────────────
+target/
+
+# ─── Go ───────────────────────────────────────────────────────────────────────
+bin/
+pkg/
+
+# ─── Java / Kotlin ────────────────────────────────────────────────────────────
+*.class
+*.jar
+.gradle/
+build/
+
+# ─── Logs & temp ──────────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+tmp/
+temp/
+
+# ─── Databases ────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── Notes (may contain sensitive findings) ───────────────────────────────────
+notes/
+scratch/
+personal/
+
+# ─── OS clutter ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ─── Editors ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+.vs/
+
+# ─── Claude Code ──────────────────────────────────────────────────────────────
+.claude/settings.local.json
